@@ -26,15 +26,10 @@ git clone https://github.com/Md-Shahid-S/MyGPT.git
 cd MyGPT
 
 # Open the project in Android Studio, set your API key, then:
-# To build the project
-./gradlew build
-
-# To run the app on a connected device or emulator
-./gradlew installDebug
+# To build and run the app on an emulator or device:
+./gradlew assembleDebug
+# or simply use the Run button in Android Studio
 ```
-
-- This will download all the project files to your computer.
-- Then, open the project in **Android Studio** and follow the setup instructions below.
 
 ---
 
@@ -80,7 +75,6 @@ private val _apiKey = MutableStateFlow("YOUR_API_KEY_HERE")
 ```kotlin
 private val _apiKey = MutableStateFlow("AIzaSy...your_actual_key...")
 ```
-
 - Make sure there are no extra spaces or line breaks.
 - Do **not** commit your real API key to public repositories!
 
